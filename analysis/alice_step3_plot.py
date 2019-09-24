@@ -98,12 +98,12 @@ if __name__ == '__main__':
 
 	# 
 	fig = plt.figure(figsize=(6,5))
-	plt.plot(situations[0][0], situations[0][1],ls='-', linewidth=1.0,color='g', marker='s', mec='g', mfc='w', label='Multilateration')
-	plt.plot(situations[1][0], situations[1][1],ls='-', linewidth=1.0,color='m', marker='o', mec='m', mfc='w', label='Multilateration-NewtonBayesianAll')
-	plt.plot(situations[2][0], situations[2][1],ls='-', linewidth=1.0,color='k', marker='.', mec='k', mfc='w', label='Newton')
+	plt.plot(situations[0][0], situations[0][1],ls='-', linewidth=1.0,color='k', marker='s', mec='k', mfc='w', label='Multilateration')
+	plt.plot(situations[1][0], situations[1][1],ls='-', linewidth=1.0,color='m', marker='o', mec='m', mfc='w', label='Multilateration-NewtonBayesian')
+#	plt.plot(situations[2][0], situations[2][1],ls='-', linewidth=1.0,color='k', marker='.', mec='k', mfc='w', label='Newton')
 #	plt.plot(situations[3][0], situations[3][1],ls='--',linewidth=1.0,color='k', marker='v', mec='k', mfc='w', label='NewtonBayesianForAcnhors')
 #	plt.plot(situations[4][0], situations[3][1],ls='--',linewidth=1.0,color='k', marker='^', mec='k', mfc='w', label='NewtonBayesianForObstacles')
-	plt.plot(situations[5][0], situations[3][1],ls='-', linewidth=1.0,color='k', marker='*', mec='k', mfc='w', label='NewtonBayesianForAll')
+#	plt.plot(situations[5][0], situations[3][1],ls='-', linewidth=1.0,color='k', marker='*', mec='k', mfc='w', label='NewtonBayesian')
 	plt.legend(frameon=True)
 	plt.xlabel('Error / m',fontdict={'family' : 'Times New Roman', 'size': 12})
 	plt.ylabel("Weight / %",fontdict={'family' : 'Times New Roman', 'size': 12})
